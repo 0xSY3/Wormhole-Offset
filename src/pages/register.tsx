@@ -40,8 +40,8 @@ export default function RegisterPage() {
 
         <div className="relative hidden h-full flex-col bg-muted  text-white lg:flex dark:border-r">
           <div className="absolute inset-0 bg-zinc-900" />
-          <h1 className="z-10 font-bold text-8xl absolute top-[24rem] left-[10rem] text-white opacity-100">
-            Hedera Offset
+          <h1 className="z-10 font-bold text-5xl absolute top-[24rem] left-[10rem] text-white opacity-100">
+            Wormhole Offset
           </h1>
           <div className="relative z-20 ">
             <div className="relative">
