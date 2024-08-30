@@ -11,6 +11,8 @@ import { useNavigate } from "react-router-dom";
 // import { ethers } from "ethers";
 // import { web3WalletAtom, contractAtom } from "@/atoms/web3";
 import { connectToHashPack } from "../../config/walletconnect";
+import { DynamicContextProvider, DynamicWidget} from '@dynamic-labs/sdk-react-core';
+import { EthereumWalletConnectors} from '@dynamic-labs/ethereum';
 
 // import abi from "../../../abi.json";
 
@@ -51,12 +53,15 @@ const MainLayout: React.FC<{
               Logout
             </Button>
 
-            <Button
+            {/* <Button
               onClick={connectToHashPack}
               className="max-w-32 overflow-x-clip text-ellipsis"
             >
               Connect Wallet
-            </Button>
+            </Button> */}
+            <DynamicContextProvider settings={{environmentId:'bd8e0047-fe5b-47c8-b543-0ae2f12cbcd8', walletConnectors: [EthereumWalletConnectors]}}>
+    <DynamicWidget />
+</DynamicContextProvider>
           </nav>
         </div>
       </header>
