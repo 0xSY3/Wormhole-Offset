@@ -153,3 +153,16 @@ The decentralized marketplace is where businesses and individuals can trade carb
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo/wormhole-offset.git
+
+2. Navigate to the Backend directory:
+   ```bash
+   cd backend
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the Docker containers:
+   ```bash
+   docker-compose up
+5. Set up your .env file with appropriate blockchain API keys and Wormhole configurations.
+
+
