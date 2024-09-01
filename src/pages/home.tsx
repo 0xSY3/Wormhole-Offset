@@ -22,7 +22,10 @@ export default function HomePage() {
   return (
     <div className="bg-gradient-to-b from-[#0C1404] to-[#23380A] min-h-screen text-[#bcc7ae] font-sans">
       <header className="flex justify-between items-center p-6">
-      <div className="text-2xl text-white font-bold">Wormhole Offset</div>
+        <div className="flex items-center">
+          <img src="/images/logo2.png" className="w-8 h-8 mr-2"/>
+          <div className="text-2xl text-white font-bold">Wormhole Offset</div>
+        </div>
         <nav className="flex space-x-8">
           <a href="#" className="uppercase">
             About Us
@@ -37,13 +40,10 @@ export default function HomePage() {
             Contacts
           </a>
         </nav>
-        {/* <button
-          className="px-4 py-2 text-[#8DBF5D] hover:bg-[#8DBF5D] hover:text-white"
+        <button 
+          className="px-5 py-2 bg-[rgb(81,162,2)] text-white font-semibold rounded-lg hover:bg-[#64a733] transition duration-300"
           onClick={handleSubmit}
-        > */}
-                    <button className="px-5 py-2 bg-[rgb(81,162,2)] text-white font-semibold rounded-lg hover:bg-[#64a733] transition duration-300"           onClick={handleSubmit}
-                    >
-
+        >
           Login / Register
         </button>
       </header>

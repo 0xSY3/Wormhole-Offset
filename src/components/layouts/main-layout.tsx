@@ -10,7 +10,6 @@ import { isLoggedInAtom } from "@/atoms/auth";
 import { useNavigate } from "react-router-dom";
 // import { ethers } from "ethers";
 // import { web3WalletAtom, contractAtom } from "@/atoms/web3";
-import { connectToHashPack } from "../../config/walletconnect";
 import { DynamicContextProvider, DynamicWidget} from '@dynamic-labs/sdk-react-core';
 import { EthereumWalletConnectors} from '@dynamic-labs/ethereum';
 
