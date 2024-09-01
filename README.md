@@ -165,4 +165,55 @@ The decentralized marketplace is where businesses and individuals can trade carb
    docker-compose up
 5. Set up your .env file with appropriate blockchain API keys and Wormhole configurations.
 
+### Frontend Setup:
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+2. Install frontend dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+   ```bash
+   npm run dev
+
+### SC Setup:
+
+1. Ensure you have a connected wallet with access to Ethereum or Solana.
+
+2. Compile the smart contracts using Hardhat:
+   ```bash
+   npx hardhat compile
+3. Deploy the smart contracts:
+   ```bash
+   npx hardhat run scripts/deploy.js --network 
+
+4. Update the frontend with the deployed contract address in src/config.js.
+
+### Setting Up IoT Devices:
+
+1. Configure your Sonoff or ESP32 devices with the appropriate data collection protocols.
+2. Connect the IoT devices to the platform using the Wormhole Offset IoT gateway.
+3. Ensure that the devices are transmitting real-time data to the blockchain via the Wormhole messaging protocol.
+
+### Roadmap:
+
+Phase 1: Initial setup and MVP with basic IoT integration and smart contract deployment.
+Phase 2: Expand cross-chain trading capabilities using Wormhole to other blockchains like Ethereum, Solana.
+Phase 3: Develop a marketplace for trading carbon offset tokens across multiple blockchains.
+Phase 4: Expand partnerships with carbon exchanges and renewable energy companies.
+
+### Contributing:
+
+We welcome contributions! To get started:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-name).
+3. Make your changes and commit (git commit -m 'Add some feature').
+4. Push to the branch (git push origin feature-name).
+5. Open a pull request.
+
+### License:
+
+This project is licensed under the MIT License.
 
